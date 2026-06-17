@@ -39,11 +39,15 @@ function showOnly(id){
     console.log("show only clicked")
     const addMoney = document.getElementById("add-money");
     const cashOut = document.getElementById("cashout");
+    const transferMoney = document.getElementById("transfer-money");
+    const payBill = document.getElementById("pay-bill");
 
     // hide all elements 
 
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
+    transferMoney.classList.add("hidden")
+    payBill.classList.add("hidden");
 
     // show the clicked element 
 
