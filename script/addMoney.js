@@ -31,9 +31,30 @@ document.getElementById("add-money-btn").addEventListener("click", function(){
 
     const pin = getInputValue("add-money-pin")
     if(pin === "1234"){
-        alert("Add money successful from");
+        alert("Add money successful");
         setBalance(newBalance);
-        console.log("New balance =", newBalance);
+
+        // transaction history 
+
+        // get history id 
+        const history = document.getElementById("history-container");
+
+        // create new div 
+        const newHistory = document.createElement("div");
+
+        // add inner html 
+        newHistory.innerHTML= `
+        <div class="transaction-card p-6 bg-base-100 rounded-2xl">
+            Add Money Successful from ${bankName},
+            Account Number ${accountNumber},
+            ${new Date()}
+        </div>
+        `;
+
+        // append new div in history 
+        history.append(newHistory);
+
+
     }
 
     else{

@@ -41,6 +41,7 @@ function showOnly(id){
     const cashOut = document.getElementById("cashout");
     const transferMoney = document.getElementById("transfer-money");
     const payBill = document.getElementById("pay-bill");
+    const history = document.getElementById("history");
 
     // hide all elements 
 
@@ -48,6 +49,7 @@ function showOnly(id){
     cashOut.classList.add("hidden");
     transferMoney.classList.add("hidden")
     payBill.classList.add("hidden");
+    history.classList.add("hidden");
 
     // show the clicked element 
 
